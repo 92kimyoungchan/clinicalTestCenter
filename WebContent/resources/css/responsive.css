@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+
+@media screen and (min-width:1200px) {
+	nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
+		width:1110px;
+	}
+}
+
+@media screen and (min-width:992px)  and (max-width:1199px)  {
+nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
+		width:930px;
+	}
+}
+
+	
+@media screen and (min-width:992px) and (max-width:1191px) {
+	
+}
+
+
+@media screen and (max-width:991px) {
+	ul.theory {
+		display:none;
+	}
+	
+	#mobilemenu {
+		display: block;
+		float: right;
+		font-size: 30px;
+		padding: 8px 16px;
+		margin: 8px 0;
+	}
+	
+	header {
+		display:none;
+	}
+	
+		nav .brandLogo {
+		margin-bottom: 8px;
+		height: 62px;
+		padding: 4px 0;
+	}
+	nav {
+		padding-top: 12px;
+		padding-bottom: 4px;
+	}
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+	nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
+		width:690px;
+	}
+}
+
+
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (min-width:645px) and (max-width:767px) {
+	
+}
+
+@media screen and (max-width:645px) {
+
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+	nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection{
+		width:510px;
+	}
+}
+
+@media screen and (min-width:425px) and (max-width:645px) {
+	
+}
+
+@media screen and (max-width:424px) {
+
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+	
+}
+
+@media only screen and (max-height: 1983px) {
+	.sidebarMenu {
+		
+		overflow-y:scroll;
+		height:100%;
+	}
+}
+
+
+
+
+
+
+
+
+
