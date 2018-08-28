@@ -16,6 +16,9 @@
 
 </head>
 <body>
+
+	<%@ include file="include/sub.jsp"%>
+
 	
 		<select class="js-example-basic-single" name="state">
   <option value="AL">Alabama</option>

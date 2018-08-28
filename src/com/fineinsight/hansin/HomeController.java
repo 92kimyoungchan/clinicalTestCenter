@@ -43,6 +43,24 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping("/board")
+	public String board(Model model) {
+		
+		
+		System.out.println("board() Start");
+		
+		return "board";
+	}
+	@RequestMapping("/boardOther")
+	public String boardWithJs(Model model) {
+		
+		
+		System.out.println("board() Start");
+		
+		return "boardWithJs";
+	}
+	
+	
 	@RequestMapping("/join")
 	public String join(Model model) {
 		System.out.println("join() Start");

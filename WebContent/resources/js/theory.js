@@ -1,39 +1,25 @@
 $( document ).ready( function() {
-/*
+	
 	var widthMove =$(window).width();
-	var heightMove = $('.sidebarMenu').height();
-	var theoryWidth =$(".ul-theory").width();
-	var sectionWidth =$(".uber-section").width();
-		$(".uber-menu").css ({
-			width: theoryWidth - 10+'px'
-		})
-		
-		var uberWidth =$(".uber-menu").width();
-		var trueWidth = sectionWidth - uberWidth; 
-			
-		$(".uberBanner").css ({
-			width: trueWidth
-		})
-		
-			$(".uberTop").css ({
-			width: trueWidth
-		})*/
+	var theoryWidth =$(".theory").width();
+	var sectionWidth =$(".uberSection").width();
+	var caretFlag = true;
 	
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
- 
+	$(".uberMenu").css ({
+		width: theoryWidth - 40+'px'
+	})
 	
-/*	
- * 	스레기
- * $('nav ul.theory li.root').hover(function () {
-		$('.uberSection').css('display','block');
+	var uberWidth =$(".uberMenu").width();
+	var trueWidth = sectionWidth - uberWidth; 
 		
-	});
+	$(".uberBanner").css ({
+		width: trueWidth
+	})
 	
+	$(".uberTop").css ({
+		width: trueWidth
+	})
 	
-	$('.uberSection').mouseleave(function () {
-		$('.uberSection').css('display','none');
-		
-	});*/
 	
 	
 	
@@ -102,30 +88,65 @@ $( document ).ready( function() {
 	    $('html').css('overflow-y','auto');
 	});
 
+	
+	
+	/* footer 관련 */
+	
+	$('.siteMap').hide();
+	
+	$(document).on("click", ".siteMap-show, .siteMap-btn", function(e) {
+        e.preventDefault();
+        if(caretFlag) {
+        	$('ul.subject li > h2.siteMap-show i').removeClass('fa-caret-up');
+        	$('ul.subject li > h2.siteMap-show i').addClass('fa-caret-down');
+        	
+        	caretFlag=false;
+        	
+        }else {
+        	$('ul.subject li > h2.siteMap-show i').removeClass('fa-caret-down');
+        	$('ul.subject li > h2.siteMap-show i').addClass('fa-caret-up');
+        	caretFlag=true;        
+        }
+        
+        $(".siteMap").slideToggle(500);
+     });
+	
+	$('ul.subject li.item').on('click', function () {
+		
+		 if(caretFlag) {
+			 $(this).find('.fas').removeClass('fa-caret-up');
+			 $(this).find('.fas').addClass('fa-caret-down');
+			 caretFlag=false;
+		 
+		 }else {
+			 $(this).find('.fas').removeClass('fa-caret-down');
+			 $(this).find('.fas').addClass('fa-caret-up');
+				caretFlag=true;  
+		 }
+		
+		$(this).children('.subTitle').toggle();
+	});
 
 
 
 
 
-/*플로팅*/
-
-// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-/*var floatPosition = parseInt($("#floatMenu").css('top'));
-*/// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
 
 } );	
 
 
 $(window).resize(function(){
-	
-/*	var widthMove =$(window).width();
-	var theoryWidth =$(".ul-theory").width();
-	var sectionWidth =$(".uber-section").width();
-$(".uber-menu").css ({
-			width: theoryWidth - 10+'px'
-		})
+
+
+	var widthMove =$(window).width();
+	var theoryWidth =$(".theory").width();
+	var sectionWidth =$(".uberSection").width();
+
+	$(".uberMenu").css ({
+		width: theoryWidth - 40+'px'
+	})
 		
-			var uberWidth =$(".uber-menu").width();
+			var uberWidth =$(".uberMenu").width();
 			var trueWidth = sectionWidth - uberWidth; 
 			
 		$(".uberBanner").css ({
@@ -134,8 +155,7 @@ $(".uber-menu").css ({
 		
 		$(".uberTop").css ({
 			width: trueWidth
-		})*/
-	
+		})
 	
 	
 });

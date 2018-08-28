@@ -22,6 +22,18 @@ section.wideBanner {
  	background: url(../images/whatTrial.png) no-repeat center; 
 
 }
+
+.article label { 
+	margin-right:0;
+}
+
+.labelRadio .checkmark {
+	top:0;
+}
+
+.labelRadio span.Item {
+	margin-left:25px;
+}
 </style>
 </head>
 <body>

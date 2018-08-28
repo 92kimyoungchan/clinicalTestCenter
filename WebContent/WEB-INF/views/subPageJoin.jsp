@@ -106,7 +106,7 @@
 				</div>
 
 				<div class="terms">
-					<h2>한신메디피아 회원 이용약관</h2>
+					<h2 class="title">한신메디피아 회원 이용약관</h2>
 
 					<div class="terms-area">
 							<div class="terms-text">
@@ -410,11 +410,13 @@
 
 							</div>
 							<div class="consent">
-								<label class="labelCheck" for="use_consent"> <input
+								<label class="labelCheck checkBorder" for="use_consent"> <input
 									type="checkbox" id="use_consent" class="inputChecking"
-									name="use" value="" /> <span class="checkmark"></span> <span>이용약관에
+									name="use" value="" /> <button class="checkmark2"><i class="far fa-check-circle"></i></button> <span>이용약관에
 										동의합니다.</span>
 								</label>
+								
+								
 							</div>
 						</div>
 						<div class="terms-area">
@@ -849,25 +851,27 @@
 							</div>
 
 							<div class="consent">
-								<label class="labelCheck" for="info_consent"> <input
+								<label class="labelCheck checkBorder" for="info_consent"> <input
 									type="checkbox" id="info_consent" class="inputChecking"
-									name="use" value="" /> <span class="checkmark"></span> <span>이용약관에
+									name="use" value="" /><button type="button" class="checkmark2"><i class="far fa-check-circle"></i></button>  
+									<span>이용약관에
 										동의합니다.</span>
 								</label>
+							
 							</div>
 						</div>
 						<div class="all-consent">
 							
-							<label class="labelCheck" for="all"> <input
-								type="checkbox" id="all" name="consent" value="success" /> <span
-								class="checkmark"></span> <span>위 이용약관에 모두 동의합니다.</span>
+							<label class="labelCheck checkBorder" for="all"> <input
+								type="checkbox" id="all" name="consent" value="success" /> <button type="button"
+								class="checkmark2"><i class="far fa-check-circle"></i></button> <span>위 이용약관에 모두 동의합니다.</span>
 							</label>
 						</div>
 
 
 				</div>
-
-
+						<div class="buttonBox"><button type="button" class="btn">확인</button>
+						</div>
 			</div>
 
 
@@ -883,15 +887,11 @@
 
 
 
-	<script type="text/javascript"
-		src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/resources/js/owl.carousel.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-	<script type="text/javascript" src="/resources/js/owl.js"></script>
-	<script type="text/javascript" src="/resources/js/owl2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script type="text/javascript" src="/resources/js/theory.js"></script>
+	
 
 
 
@@ -905,6 +905,9 @@
 			})
 			
 			var flag = $("input[type='checkbox'][id='all']").is(':checked');
+			var flag2 = true;
+			
+		
 			
 			/*체크박스 전체선택*/
 			$("input[type='checkbox'][id='all']").on('click',function(){
@@ -917,6 +920,117 @@
 					flag = true;
 				}
 				
+			});
+			
+			$('.labelCheck.checkBorder input').on('click',function(){
+				
+				if(flag2) {
+					
+					if($(this).parent().parent().attr('class')=="all-consent"){
+						
+						$('.terms-area .consent').css({
+							'color':'#12b8ba',
+							'border-color':'#12b8ba'
+						});
+						
+						$('.all-consent').css({
+							'color':'#12b8ba',
+							'border-color':'#12b8ba'
+						});
+						
+						
+						
+						$('.checkmark2 i').css({
+							'color':'#12b8ba'
+						})
+						$('.terms-area .consent label>span:last-child').css({
+							'color':'#12b8ba'
+						});
+						
+						$('.all-consent label>span:last-child').css({
+							'color':'#12b8ba'
+						});
+						
+						
+						
+						
+					}else {
+					$(this).next().children().first().css({
+						'color':'#12b8ba'
+					});
+					
+					$(this).parent().parent().css({
+						'color':'#12b8ba',
+						'border-color':'#12b8ba'
+					});
+					
+					$(this).nextAll('.terms-area .consent label>span:last-child').css({
+						'color':'#12b8ba'
+					});
+					
+					$(this).nextAll('.all-consent label>span:last-child').css({
+						'color':'#12b8ba'
+					});
+					
+					}
+					
+					
+					flag2=false;
+				}else {
+					if($(this).parent().parent().attr('class')=="all-consent"){
+						
+						
+						$('.terms-area .consent').css({
+							'color':'#222',
+							'border-color':'#ddd'
+						});
+						
+						$('.all-consent').css({
+							'color':'#222',
+							'border-color':'#ddd'
+						});
+						
+						
+						
+						$('.checkmark2 i').css({
+							'color':'#c4c4c3'
+						})
+						$('.terms-area .consent label>span:last-child').css({
+							'color':'#222'
+						});
+						
+						$('.all-consent label>span:last-child').css({
+							'color':'#222'
+						});
+						
+						
+					}else {
+					
+					
+					$(this).next().children().first().css({
+						'color':'#c4c4c3'
+					});
+					
+					$(this).parent().parent().css({
+						'color':'#222',
+						'border-color':'#ddd'
+					});
+					
+					$(this).nextAll('.terms-area .consent label>span:last-child').css({
+						'color':'#222'
+					});
+					
+					$(this).nextAll('.all-consent label>span:last-child').css({
+						'color':'#222'
+					});
+					
+					
+					
+					
+					}
+					
+					flag2=true;
+				}
 			});
 			
 			

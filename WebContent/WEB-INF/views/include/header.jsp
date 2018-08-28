@@ -36,27 +36,23 @@
 							<li class="mobileUser set">
 								<h2 class="title">My Page</h2>
 								<ul class="innerUl">
-									<li><a href="/member/myWishList">나의 관심공고</a></li>
-									<li><a href="/member/myAddInfo">추가정보 입력</a></li>
-									<li><a href="/member/memberModifyCheck">회원정보 수정</a></li>
-									<li><a href="/member/myWork">나의 시험이력</a></li>
-									<li><a href="/member/myResearch">사전설문조사</a></li>
+									<li><a href="">menu1</a></li>
+									<li><a href="">menu2</a></li>
+									<li><a href="">menu3</a></li>
+									<li><a href="">menu4</a></li>
+									<li><a href="">menu5</a></li>
 									
 								</ul>
 							</li>
 					
 					
-					<li class="set">
-					<h2 class="title">allct</h2>
-					<div class="buttonBox only">
-					<button onclick="location.href='/logout'">로그아웃</button></div>
-				</li>
+					
 						<!-- 클라이언트유저 마이페이지 -->
 						<li class="mobileClient set">
 							<h2 class="title">Client Page</h2>
 							<ul class="innerUl">
-									<li><a href="/member/myWorkClient">등록한공고</a></li>
-								<li><a href="/member/memberModifyCheck2">회원정보수정</a></li>
+									<li><a href="">menu1</a></li>
+								<li><a href="">menu2</a></li>
 							</ul>
 						</li>
 				
@@ -65,46 +61,55 @@
 				
 		
 			<li class="set">
-			<h2 class="title">임상시험이란?</h2>
+			<h2 class="title">센터소개</h2>
 			<ul class="innerUl">
-				<li><a href="/info/infoClinicalInfo">임상시험 제대로 알기</a></li>
-				<li><a href="/info/infoClinicalQualify">참여자가 고려할 사항</a></li>
-				<li><a href="/info/infoClinicalSupport">임상시험 참여방법</a></li>
-				<li><a href="/info/infoClinicalStatus">임상시험의 현황</a></li>
+				<li><a href="">미션 및 비전</a></li>
+						<li><a href="">조직관계도</a></li>
+						<li><a href="">시설 및 설비</a></li>
+						<li><a href="">투어신청</a></li>
+						<li><a href="">오시는길</a></li>
 			
 				
 				
 			</ul>  
 		</li> 
 			<li class="set">
-			<h2 class="title">참여정보</h2>
+			<h2 class="title">연구지원</h2>
 			<ul class="innerUl">
-				<li><a href="/recruit/recruitList">임상시험 모집공고</a></li>
-				<li><a href="/recruit/recruitListBio">생동성시험 모집공고</a></li>
+				<li><a href="">연구지원절차</a></li>
+						<li><a href="">연구계약/연구비</a></li>
+						<li><a href="">연구지원내용</a></li>
+						<li><a href="">데이터 관리</a></li>
+						<li><a href="">시설이용안내</a></li>
+						<li><a href="">모니터룸 예약</a></li>
+						<li><a href="">FAQ</a></li>
 				
 				
 			</ul>
 		</li>
 			<li class="set">
-			<h2 class="title">전문정보</h2>
+			<h2 class="title">자원자</h2>
 			<ul class="innerUl">
-				<li><a onclick="wait()" class="jopWait-mobile">구직정보</a></li>
-				<li><a href="/info/infoAcademy">학술정보</a></li>
-				<li><a href="/info/infoEduInfo">교육정보</a></li>
-				<li><a href="/info/infoDuty">직무별 연간 교육일정</a></li>
-				<li><a href="/info/infoEduCompany">교육기관</a></li>
-				<li><a href="/info/infoCourt">국내 법령∙가이드라인</a></li>
-				<li><a href="/info/infoRule">국제 관련 규정</a></li>
-				<li><a href="/info/infoEtc">기타 정보∙자료</a></li>
-				<li><a href="/info/infoEduSite">관련사이트</a></li>
+				<li><a href="">임상시험참여절차</a></li>
+						<li><a href="">모집공고</a></li>
+						<li><a href="">FAQ</a></li>
 			</ul>
 		</li>
 			<li class="set">
-			<h2 class="title">알림정보</h2>
+			<h2 class="title">IRB</h2>
 			<ul class="innerUl">
-				<li><a href="/info/infoNotice">공지사항</a></li>
-				<li><a href="/info/infoQna">문의 및 상담</a></li>
-				<li><a href="/info/infoFaq">자주 묻는 질문</a></li>
+			<li><a href="">연구윤리</a></li>
+						<li><a href="">IRB</a></li>
+			</ul>
+		</li>
+		
+		<li class="set">
+			<h2 class="title">정보광장</h2>
+			<ul class="innerUl">
+				<li><a href="">교육/행사 안내</a></li>
+						<li><a href="">관련 규정</a></li>
+						<li><a href="">관련 사이트</a></li>
+						<li><a href="">Q&A</a></li>
 			</ul>
 		</li>
 		
@@ -130,109 +135,81 @@
 			
 			<div class="userBehavior">
 			<button>로그인</button>
+			<span>ㆍ</span>
 			<button>회원가입</button>
 			</div><ul class="theory">
-				<li class="root"><a class="rootA" href="">Menu1</a>
-					<div class="uberSection">
-							<ul class="uberMenu">
-								<li class="uberColumn">
-									<ul>
-										<li>
-											<div>
-											<p class="uberHeader">
-													ClinicalTrials
-												</p>
-											</div>
-										</li>
-										<li><a href="">menu-1</a></li>
-										<li><a href="">menu-2</a></li>
-										<li><a href="">menu-3</a></li>
-										<li class=""><a href="">menu-4</a></li>
-										
-								
-									</ul>
-								</li>
-								<li class="uberColumn">
-									<ul>
-										<li>
-											
-												<p class="uberHeader">
-													Participant
-
-												</p>
-
-											
-										</li>
-										<li><a href="">menu-1</a></li>
-										<li><a href="">menu-2</a></li>
-									</ul>
-								</li>
-								<li class="uberColumn">
-									<ul>
-										<li>
-											
-													<p class="uberHeader">
-													Infomation
-												</p>
-											
-										</li>
-											<li><a href="">menu-1</a></li>
-											<li><a href="">menu-2</a></li>
-											<li><a href="">menu-3</a></li>
-											<li class=""><a href="">menu-4</a></li>
-											<li class=""><a href="">menu-5</a></li>
-											<li class=""><a href="">menu-6</a></li>
-											<li class=""><a href="">menu-7</a></li>
-											<li class=""><a href="">menu-8</a></li>
-											<li><a href="">menu-9</a></li>
-									</ul>
-								</li>
-								<li class="uberColumn">
-									<ul>
-										<li>
-												<p class="uberHeader">
-													ServiceCenter
-												</p>
-
-											</li>
-												<li><a href="">menu-1</a></li>
-
-										<li><a href="">menu-2</a></li>
-										<li><a href="">menu-3</a></li>
-									</ul>
-								</li>
-								
-
-							</ul>
-						</div></li>
-				<li class="root"><a class="rootA" href="">Menu2</a>
+				<li class="root"><a class="rootA" href="">센터소개</a>
 					<ul class="dropMenu">
-						<li><a href="">Menu2의 소메뉴1</a></li>
-						<li><a href="">Menu2의 소메뉴2</a></li>
+						<li><a href="">미션 및 비전</a></li>
+						<li><a href="">조직관계도</a></li>
+						<li><a href="">시설 및 설비</a></li>
+						<li><a href="">투어신청</a></li>
+						<li><a href="">오시는길</a></li>
 					</ul></li>
-				<li class="root"><a class="rootA" href="">Menu3</a>
+				<li class="root"><a class="rootA" href="">연구지원</a>
 					<ul class="dropMenu">
-						<li><a href="">Menu3의 소메뉴1</a></li>
-						<li><a href="">Menu3의 소메뉴2</a></li>
+						<li><a href="">연구지원절차</a></li>
+						<li><a href="">연구계약/연구비</a></li>
+						<li><a href="">연구지원내용</a></li>
+						<li><a href="">데이터 관리</a></li>
+						<li><a href="">시설이용안내</a></li>
+						<li><a href="">모니터룸 예약</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul></li>
+				<li class="root"><a class="rootA" href="">자원자</a>
+					<ul class="dropMenu">
+						<li><a href="">임상시험참여절차</a></li>
+						<li><a href="">모집공고</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul></li>
+					<li class="root"><a class="rootA" href="">IRB</a>
+					<ul class="dropMenu">
+						<li><a href="">연구윤리</a></li>
+						<li><a href="">IRB</a></li>
+					</ul></li>
+					<li class="root"><a class="rootA" href="">정보광장</a>
+					<ul class="dropMenu">
+						<li><a href="">교육/행사 안내</a></li>
+						<li><a href="">관련 규정</a></li>
+						<li><a href="">관련 사이트</a></li>
+						<li><a href="">Q&A</a></li>
 					</ul></li>
 				
 				<li class="uber"><button class="btn" type="button"><i
 							class="fas fa-align-justify"></i></button>
 						<div class="uberSection">
+						<div class="uberTop">
+								<div class="imgTray">
+									<img src="/resources/images/almighty.png" alt="">
+								</div>
+							</div>
+							<div class="uberBanner">
+								<div class="topArea">
+									<p>All of Clinical Trials</p>
+									<div class="titleLogo">
+										<div class="logoInner">
+											<img src="/resources/images/all-logo.png" alt="">
+											<h2>임상시험의 모든정보를 찾아서 제공합니다.</h2>
+										</div>
+									</div>
+									<p>임상시험의 올바르고 다양한 정보를 제공하여 참여자 및 관련 종사자들이 건강한 미래를 만들 수 있게 돕겠습니다.</p>
+								</div>
+
+
+							</div>
 							<ul class="uberMenu">
 								<li class="uberColumn">
 									<ul>
 										<li>
 											<div>
-											<p class="uberHeader">
-													ClinicalTrials
-												</p>
+											<p class="uberHeader">센터소개</p>
 											</div>
 										</li>
-										<li><a href="">menu-1</a></li>
-										<li><a href="">menu-2</a></li>
-										<li><a href="">menu-3</a></li>
-										<li class=""><a href="">menu-4</a></li>
+										<li><a href="">미션 및 비전</a></li>
+						<li><a href="">조직관계도</a></li>
+						<li><a href="">시설 및 설비</a></li>
+						<li><a href="">투어신청</a></li>
+						<li><a href="">오시는길</a></li>
 										
 								
 									</ul>
@@ -240,50 +217,53 @@
 								<li class="uberColumn">
 									<ul>
 										<li>
-											
-												<p class="uberHeader">
-													Participant
-
-												</p>
+											<p class="uberHeader">연구지원</p>
 
 											
 										</li>
-										<li><a href="">menu-1</a></li>
-										<li><a href="">menu-2</a></li>
+										<li><a href="">연구지원절차</a></li>
+						<li><a href="">연구계약/연구비</a></li>
+						<li><a href="">연구지원내용</a></li>
+						<li><a href="">데이터 관리</a></li>
+						<li><a href="">시설이용안내</a></li>
+						<li><a href="">모니터룸 예약</a></li>
+						<li><a href="">FAQ</a></li>
 									</ul>
 								</li>
 								<li class="uberColumn">
 									<ul>
 										<li>
 											
-													<p class="uberHeader">
-													Infomation
-												</p>
+													<p class="uberHeader">자원자</p>
 											
 										</li>
-											<li><a href="">menu-1</a></li>
-											<li><a href="">menu-2</a></li>
-											<li><a href="">menu-3</a></li>
-											<li class=""><a href="">menu-4</a></li>
-											<li class=""><a href="">menu-5</a></li>
-											<li class=""><a href="">menu-6</a></li>
-											<li class=""><a href="">menu-7</a></li>
-											<li class=""><a href="">menu-8</a></li>
-											<li><a href="">menu-9</a></li>
+											<li><a href="">임상시험참여절차</a></li>
+						<li><a href="">모집공고</a></li>
+						<li><a href="">FAQ</a></li>
 									</ul>
 								</li>
 								<li class="uberColumn">
 									<ul>
 										<li>
-												<p class="uberHeader">
-													ServiceCenter
-												</p>
+												<p class="uberHeader">IRB</p>
 
 											</li>
-												<li><a href="">menu-1</a></li>
+													<li><a href="">연구윤리</a></li>
+						<li><a href="">IRB</a></li>
+									</ul>
+								</li>
+								<li class="uberColumn">
+									<ul>
+										<li>
+											
+												<p class="uberHeader">정보광장</p>
 
-										<li><a href="">menu-2</a></li>
-										<li><a href="">menu-3</a></li>
+											
+										</li>
+										<li><a href="">교육/행사 안내</a></li>
+						<li><a href="">관련 규정</a></li>
+						<li><a href="">관련 사이트</a></li>
+						<li><a href="">Q&A</a></li>
 									</ul>
 								</li>
 								

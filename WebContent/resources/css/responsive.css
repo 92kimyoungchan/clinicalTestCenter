@@ -6,6 +6,12 @@
 	}
 }
 
+@media screen and (max-width:1199px) {
+	table#boneBoard tbody tr td.date {
+		min-width:110px;
+	}
+}
+
 @media screen and (min-width:992px)  and (max-width:1199px)  {
 nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
 		width:930px;
@@ -17,10 +23,32 @@ nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
 	
 }
 
+@media screen and (min-width:992px) {
+	div.subP {
+		width:73.5%;
+		min-height:720px;
+		float:right;
+	}
+}
+
+
 
 @media screen and (max-width:991px) {
+	
+	div.subP {
+		
+	}
+	
+	
+	.x-sidebar {
+		display:none;
+	}
 	ul.theory {
 		display:none;
+	}
+
+	nav div.userBehavior {
+			display:none;
 	}
 	
 	#mobilemenu {
@@ -56,7 +84,30 @@ nav ul.theory li.uber div.uberSection , nav ul.theory li.root div.uberSection {
 
 
 @media screen and (max-width:767px) {
-
+	.elementWrapper .element .mobileHead {
+		display:block;
+	}
+	
+	table#boneBoard tbody tr td:nth-of-type(4) , table#boneBoard tbody tr td:nth-of-type(5) , table#boneBoard tbody tr td:nth-of-type(6) , table#boneBoard thead tr th:nth-of-type(4) , table#boneBoard thead tr th:nth-of-type(5) , table#boneBoard thead tr th:nth-of-type(6) {
+		display:none;
+	}
+	
+	table#boneBoard tbody tr td {
+		padding:0 6.5px;
+	}
+	
+	table#boneBoard tbody tr td.inElement {
+		padding:18px 6.5px 18px 11.5px;
+	}
+	
+	ul.ulInTable li span:after {
+		margin:0 6.5px;
+	}
+	
+	
+	
+	
+	
 }
 
 @media screen and (min-width:645px) and (max-width:767px) {
