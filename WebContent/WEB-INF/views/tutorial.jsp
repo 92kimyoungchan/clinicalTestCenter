@@ -372,9 +372,9 @@ section.wideBanner {
 				<h2>button 모음</h2>
 			</div>
 
-			<button type="button">normal</button>
-			<button class="ghost" type="button">ghost</button>
-			<button class="dark" type="button">black</button>
+			<button class="btn" type="button">normal</button>
+			<button class="btn ghost" type="button">ghost</button>
+			<button class="btn dark" type="button">black</button>
 		</section>
 
 		<section>

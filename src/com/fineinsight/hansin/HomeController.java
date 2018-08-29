@@ -14,14 +14,7 @@ public class HomeController {
 		return "tutorial";
 	}
 	
-	@RequestMapping("/tutorial2")
-	public String tutorial2(Model model) {
-		
-		
-		System.out.println("tutorial2() Start");
-		
-		return "tutorial2";
-	}
+
 	
 	@RequestMapping("/main")
 	public String main(Model model) {

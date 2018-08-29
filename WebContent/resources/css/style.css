@@ -855,11 +855,18 @@ nav {
 
 a, input, button {
 	outline: none;
+	box-shadow:none;
+}
+
+button.btn {
+	border:none;
+	padding:11px 19px;
+	color:inherit;
 }
 
 
 
-a:focus, a:active, input:active, input:focus, button:active, button:focus
+a:focus, a:active, input:active, input:focus, button:active, button:focus , button:hover
 	{
 	outline: none;
 	box-shadow:none;
