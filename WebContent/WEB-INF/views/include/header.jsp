@@ -128,16 +128,16 @@
 	<nav>
 		<div class="container">
 			<div class="brandLogo">
-				<a href=""><img src="/resources/images/all-logo.png"></a>
+				<a href=""><img src="/resources/images/CTC-logo.png"></a>
 			</div>
 							<a id="mobilemenu" class="test111"><i class="fas fa-align-justify"></i></a>
 			
 			
-			<div class="userBehavior">
+			<!-- <div class="userBehavior">
 			<button>로그인</button>
 			<span>ㆍ</span>
 			<button>회원가입</button>
-			</div><ul class="theory">
+			</div> --><ul class="theory">
 				<li class="root"><a class="rootA" href="">센터소개</a>
 					<ul class="dropMenu">
 						<li><a href="">미션 및 비전</a></li>

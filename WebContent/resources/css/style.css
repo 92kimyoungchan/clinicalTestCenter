@@ -389,7 +389,7 @@ nav div.userBehavior button:last-of-type {
 nav ul.theory {
 	margin: 0;
 	overflow: hidden;
-	float: right;
+	float: left;
 	padding: 0;
 	list-style: none;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -603,7 +603,7 @@ ul.uberMenu li.uberColumn ul > li p.uberHeader {
 
 
 nav .brandLogo {
-	float:left;
+	float: right;
 	padding: 17px 0;
 	height: 80px;
 }
@@ -1564,7 +1564,7 @@ color: gray;
 }
 
 .select2-results__option {
-	padding-left: 12.5px;
+	padding-left: 8px;
 }
 
 
@@ -1775,10 +1775,17 @@ div.subWrapper .boardMenu label span {
 div.subWrapper .boardMenu .boardSearch {
 	
 float: right;
+	
+height: 40px;
 }
 
 div.subWrapper .boardMenu .boardSearch .selectGroup {
 	
+float: left;
+	
+margin-right: 4.5px;
+	
+height: inherit;
 }
 
 div.subWrapper .boardMenu .boardSearch .js-example-basic-single {
@@ -1787,13 +1794,17 @@ div.subWrapper .boardMenu .boardSearch .js-example-basic-single {
 
 .boardSearch .searchBox {
 	
+float: left;
 	
+height: inherit;
 }
 
 
 .boardSearch .searchBox .inputSearch {
 	
+float: left;
 	
+height: inherit;
 }
 
 .boardSearch .searchBox .inputSearch label.labelSearch {
@@ -1803,17 +1814,22 @@ div.subWrapper .boardMenu .boardSearch .js-example-basic-single {
 
 .boardSearch .searchBox .inputSearch input {
 	
+height: inherit;
 	
+padding-left: 8px;
 }
 
 .boardSearch .searchBox button.searchIcon {
-	
-	
+    float: left;
+    height: inherit;
+    border: none;
+    min-width: 42px;
+    background: #2e9ed6;
 }
 
 .boardSearch .searchBox button.searchIcon i {
 	
-	
+color: white;
 }
 
 
